@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>floralstatistics.com · Coming soon</title>
+  <meta name="description" content="Verified, monthly-updated data on US florists and plant shops, for the companies that sell to them. Coming soon.">
+  <meta property="og:title" content="floralstatistics.com · Data blooms opportunity">
+  <meta property="og:description" content="Verified, monthly-updated data on US florists and plant shops. Coming soon.">
+  <meta property="og:image" content="https://www.floralstatistics.com/og-image.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Brand tokens from the floralstatistics.com brand guide (Oct 2026, proposed HEX values). */
+    :root {
+      --purple: #5A178A; --magenta: #BF3F95; --amber: #FE8E33; --leaf: #0C6548; --field: #010000;
+      --bg: #FAF8FC; --surface: #FFFFFF; --ink: #1D1626; --muted: #5E546A; --line: #E7E1EE;
+      --link: var(--purple);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0E0B12; --surface: #17121D; --ink: #F3EEF7; --muted: #B4A8C2; --line: #2C2335; --link: #C79BEA;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0E0B12; --surface: #17121D; --ink: #F3EEF7; --muted: #B4A8C2; --line: #2C2335; --link: #C79BEA;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body { background: var(--bg); color: var(--ink); font: 400 17px/1.6 Inter, Arial, sans-serif; }
+    a { color: var(--link); }
+    .hero { background: var(--field); color: #FEFEFE; padding: 56px 16px 64px; text-align: center; }
+    .hero img { width: min(560px, 100%); height: auto; display: block; margin: 0 auto; }
+    @media (max-width: 520px) { .hero img { width: min(300px, 100%); } .hero .badge { margin-top: 28px; } }
+    .hero .badge { display: inline-block; margin-top: 36px; padding: 6px 14px; border-radius: 999px;
+      border: 1px solid rgba(254,254,254,.35); font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+    .hero h1 { font-weight: 700; font-size: clamp(28px, 5vw, 44px); line-height: 1.15; margin: 18px auto 12px; max-width: 760px; }
+    .hero p { color: #D9D2E2; font-size: 18px; max-width: 620px; margin: 0 auto; }
+    .bar { height: 6px; background: linear-gradient(90deg, var(--magenta), var(--purple) 45%, var(--amber)); }
+    main { max-width: 1040px; margin: 0 auto; padding: 48px 16px 24px; }
+    h2 { font-weight: 700; font-size: 26px; margin: 0 0 8px; }
+    .lead { color: var(--muted); margin: 0 0 28px; max-width: 680px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+    .card h3 { margin: 0 0 6px; font-size: 18px; font-weight: 600; }
+    .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 8px; vertical-align: 1px; }
+    .cta { margin: 40px 0 8px; padding: 28px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line);
+      display: flex; gap: 20px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .cta h2 { font-size: 22px; }
+    .cta p { margin: 0; color: var(--muted); }
+    .btn { display: inline-block; background: var(--purple); color: #FFFFFF; text-decoration: none; font-weight: 600;
+      padding: 12px 22px; border-radius: 8px; white-space: nowrap; }
+    .btn:hover { background: #4A1272; }
+    .btn:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+    footer { max-width: 1040px; margin: 0 auto; padding: 24px 16px 48px; color: var(--muted); font-size: 14px;
+      display: flex; gap: 16px; justify-content: space-between; flex-wrap: wrap; border-top: 1px solid var(--line); }
+    footer nav { display: flex; gap: 16px; flex-wrap: wrap; }
+    footer a { color: var(--muted); }
+    .tagline { letter-spacing: .14em; text-transform: uppercase; font-weight: 600; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <picture>
+      <source media="(max-width: 520px)" srcset="logo-compact-dark.webp" width="572" height="110">
+      <img src="logo-primary-dark.webp" width="960" height="207" alt="floralstatistics.com - Data blooms opportunity">
+    </picture>
+    <div class="badge">Coming soon</div>
+    <h1>Clear, verified data on America&rsquo;s florists and plant shops.</h1>
+    <p>We&rsquo;re building the most complete and current lists of US floral businesses, for the wholesalers,
+      growers, importers and suppliers who sell to them.</p>
+  </header>
+  <div class="bar" aria-hidden="true"></div>
+
+  <main>
+    <h2>What&rsquo;s on the way</h2>
+    <p class="lead">Each business is checked against its own website and confirmed across independent sources,
+      then re-checked every month, so you can see where the opportunities are.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="dot" style="background:var(--purple)"></span>Florist Database</h3>
+        <p>Storefront florists in all 50 states, plus event-only designers, with emails, phones, websites,
+          wire-service memberships and a weddings &amp; events filter.</p>
+      </div>
+      <div class="card">
+        <h3><span class="dot" style="background:var(--leaf)"></span>Plant Shop Database</h3>
+        <p>Plant shops, retail nurseries and garden centers, listed separately from florists so growers
+          can reach them directly.</p>
+      </div>
+      <div class="card">
+        <h3><span class="dot" style="background:var(--magenta)"></span>Monthly change report</h3>
+        <p>New openings, closings and changed details, state by state, every month. Reach new shops while
+          they&rsquo;re still choosing suppliers.</p>
+      </div>
+    </div>
+
+    <section class="cta">
+      <div>
+        <h2>Want early access?</h2>
+        <p>Tell us what you sell and where. Founding subscribers get first look and launch pricing.</p>
+      </div>
+      <a class="btn" href="mailto:hello@floralstatistics.com?subject=Early%20access%20to%20floralstatistics.com">Get early access</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>&copy; 2026 floralstatistics.com &middot; <span class="tagline">Data blooms opportunity</span></span>
+    <nav aria-label="Social media">
+      <a href="https://www.instagram.com/floralstatistics">Instagram</a>
+      <a href="https://www.threads.net/@floralstatistics">Threads</a>
+      <a href="https://www.tiktok.com/@floralstatistics">TikTok</a>
+      <a href="https://www.youtube.com/@floralstatistics">YouTube</a>
+      <a href="https://x.com/floralstats">X</a>
+    </nav>
+  </footer>
+</body>
+</html>
