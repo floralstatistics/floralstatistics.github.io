@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>floralstatistics.com · Coming soon</title>
-  <meta name="description" content="Verified, monthly-updated data on US florists and plant shops, for the companies that sell to them. Coming soon.">
+  <meta name="description" content="Verified, monthly-updated data on US retail florists, wedding and event designers, garden centers and plant shops. Coming soon.">
   <meta property="og:title" content="floralstatistics.com · Data blooms opportunity">
   <meta property="og:description" content="Verified, monthly-updated data on US florists and plant shops. Coming soon.">
   <meta property="og:image" content="https://www.floralstatistics.com/og-image.png">
@@ -38,6 +38,10 @@
     .hero .badge { display: inline-block; margin-top: 36px; padding: 6px 14px; border-radius: 999px;
       border: 1px solid rgba(254,254,254,.35); font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
     .hero h1 { font-weight: 700; font-size: clamp(28px, 5vw, 44px); line-height: 1.15; margin: 18px auto 12px; max-width: 760px; }
+    .segments { list-style: none; padding: 0; margin: 4px auto 22px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; max-width: 760px; }
+    .segments li { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px;
+      border: 1px solid rgba(254,254,254,.28); background: rgba(254,254,254,.06); font-weight: 600; font-size: 15px; }
+    .segments .dot { margin: 0; width: 9px; height: 9px; }
     .hero p { color: #D9D2E2; font-size: 18px; max-width: 620px; margin: 0 auto; }
     .bar { height: 6px; background: linear-gradient(90deg, var(--magenta), var(--purple) 45%, var(--amber)); }
     main { max-width: 1040px; margin: 0 auto; padding: 48px 16px 24px; }
@@ -70,7 +74,13 @@
       <img src="logo-primary-dark.webp" width="960" height="207" alt="floralstatistics.com - Data blooms opportunity">
     </picture>
     <div class="badge">Coming soon</div>
-    <h1>Clear, verified data on America&rsquo;s florists and plant shops.</h1>
+    <h1>Clear, verified data on America&rsquo;s floral businesses.</h1>
+    <ul class="segments" aria-label="Businesses covered">
+      <li><span class="dot" style="background:#BF3F95"></span>Retail florists</li>
+      <li><span class="dot" style="background:#9B6BD6"></span>Wedding &amp; event designers</li>
+      <li><span class="dot" style="background:#1E9E6E"></span>Garden centers</li>
+      <li><span class="dot" style="background:#FE8E33"></span>Plant shops</li>
+    </ul>
     <p>We&rsquo;re building the most complete and current lists of US floral businesses, for the wholesalers,
       growers, importers and suppliers who sell to them.</p>
   </header>
